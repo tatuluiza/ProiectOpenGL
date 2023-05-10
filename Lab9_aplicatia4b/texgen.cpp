@@ -80,7 +80,7 @@ void CALLBACK display()
 	glFlush();
 }
 
-void CALLBACK IdleFunction()
+void CALLBACK idleFunction()
 {
 	angle += 1;
 	display();
@@ -109,7 +109,7 @@ int main(int argc, char** argv)
 	auxInitWindow("Texture Map");
 	myInit();
 	auxReshapeFunc(myReshape);
-	auxIdleFunc(IdleFunction);
+	auxIdleFunc(idleFunction);
 	auxMainLoop(display);
 	return 0;
 }

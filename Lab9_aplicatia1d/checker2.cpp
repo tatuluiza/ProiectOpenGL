@@ -87,7 +87,7 @@ int main(int argc, char** argv)
 {
 	auxInitDisplayMode(AUX_SINGLE | AUX_RGB | AUX_DEPTH16);
 	auxInitPosition(0, 0, 800, 600);
-	auxInitWindow("Maparea texturilor 2D");
+	auxInitWindow("Maparea texturilor");
 	myInit();
 	auxReshapeFunc(myReshape);
 	auxMainLoop(display);
